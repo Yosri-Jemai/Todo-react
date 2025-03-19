@@ -1,0 +1,82 @@
+.todo {
+    width: 90vw;
+    max-width: 600px;
+    height: 90vh;
+    border-radius: 15px;
+    background: #fff;
+    margin: auto;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 3vw;
+    padding-bottom: 3vh;
+    margin-bottom: 3vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.todo-header {
+    margin-top: 4vh;
+    color: #002765;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Prevents text from overflowing */
+    white-space: nowrap;
+}
+
+.todo-add {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-top: 3vh;
+    overflow: hidden;
+}
+
+.todo-input {
+    border-radius: 50px;
+    background: #edeef0;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 68px;
+    padding: 0 120px 0 20px;
+    font-size: 18px;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.todo-add-btn {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+    background: #ff6739;
+    width: 110px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Prevents text from spilling */
+}
+
+.todo-add-btn:hover {
+    background: #db522b;
+}
+
+.todo-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: calc(90vh - 200px); /* Prevents it from overflowing */
+}
