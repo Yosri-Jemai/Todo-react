@@ -23,3 +23,7 @@
     cursor: pointer;
     padding-right: 25px;
 }
+
+.tick{
+    text-decoration: line-through solid #adadad 2px;
+}
